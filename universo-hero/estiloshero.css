@@ -1,0 +1,130 @@
+/** Con el símbolo especial * se indica que el estilo asignado se aplica a todos los campos**/
+/**Con el padding a 0 quitamos cualquier distancia de separación entre el borde y el contenido**/
+/**Con el margin a 0 quitamos separación que se va a dejar entre el borde y la parte exterior de la capa**/
+*{margin:0px; padding:0px;}
+        
+/**********CAPA PRINCIPAL QUE CONTIENE TODOS LOS ELEMENTOS DE LA PÁGNA**********/
+  #content{
+    width:1000px;
+    height:auto;
+    margin:auto;
+           }
+          
+/******** COLORES PARA LOS ENLACES EN GENERAL********/
+   a:link {text-decoration:none;color:greenyellow;}
+   a:visited {text-decoration:none;color:cyan;}
+   a:active {text-decoration:none;color:magenta;}
+   a:hover {text-decoration:underline;color: yellow}
+   
+/* Colores para los enlaces que utiliceremos sólo en el <aside> (se declaran con un nombre de clase, en este caso paneles) */
+   a.paneles:visited {color:red;} 
+   a.paneles:active {color:green;} 
+   a.paneles:link {color:red} 
+   a.paneles:hover {color:blue}  
+   
+/******************CABECERA COMPUESTA POR DOS CAPAS (#logo y #titulo)*******************/
+  header{
+    width: 1000px;
+    height: 150px;
+    background-image: url(imagenes/fondos/estrellas.jpg);
+    float:left;
+       }
+       
+  #logo{
+    width: 180px;
+    height: 125px;
+    float:left;
+       }
+   
+   #titulo{
+     width: 820px;
+     height: 125px;
+     float:left;
+    display:block;
+     text-align: center;
+            }
+           
+            
+/***MENÚ DE NAVEGACIÓN y debajo estilo para cada link de opciones **/            
+    nav{
+      width: 1000px;
+      height: 30px;
+      float:left;
+      color: white;
+      background-color:black;
+      font-size: 18px;
+      margin-bottom: 6px;
+      padding-top: 3px;
+        }
+      
+    nav a{
+      display: inline-block;
+      width:120px;
+      text-align: left;
+      margin-left: 10px;
+        }
+                
+/*******************CUERPO formado por secciones y artículos*************/
+   section{
+      width: 600px;
+      height: auto;
+      float:left;
+      padding-top: 10px;
+            }
+         
+   article{
+      width: 560px;
+      height: auto;
+      float:left;
+      padding-top: 10px;
+      padding-left: 30px;
+      font-size: 18px;
+      text-align:justify;
+          }  
+            
+/*********************************PANEL LATERAL DERECHO*******************************/     
+   aside{
+      width: 200px;
+      height: auto;
+      float:right;
+         }
+            
+  
+/**************************************PIE************************************/
+   footer{
+      width: 1000px;
+      height: 90px;
+      float:left;
+      background-image: url(imagenes/fondos/estrellas.gif);
+      color: white;
+      margin-top: 5px;
+         }
+         
+/*************************TEXTOS DE ENCABEZADOS *************************/ 
+             /****** Tamaño de fuente para encabezado h1 ******/
+
+   h1{
+      color: #ffffff;
+      font-family: andalus;
+      font-size: 60px;
+      padding-left:20px;
+          }
+               
+   h3{
+      color: #ffffff;
+      font-family: andalus;
+      font-size: 25px;
+      padding-left:20px;
+           }           
+ 
+/*************************ESPACIADOS PARA PÁRRAFOS E IMÁGENES *************************/           
+ p{padding-bottom: 20px; }   
+  img{padding-top: 20px; }        
+  
+/************************* CAPA PARA ANUNCIOS PANEL DERECHO <ASIDE> *************************/   
+.anuncios{
+    width: 170px;
+    height: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
